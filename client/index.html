@@ -58,6 +58,27 @@
         <tfoot>
         </tfoot>
     </table>
-    <script src="js/lib/index.js"></script>
+
+    <script src="js/app/models/Negociacao.js"></script>
+    <script type="text/javascript">
+
+        //Pelo fato da variavel 'i' ser um 'var', é possível trabalhar com a variavel mesmo fora do 'for'
+        // for(var i = 0; i<100; i++){
+        //     console.log(i);
+        // }
+        // console.log(i);
+
+        //Pelo fato da variavel 'i' ser um 'let', NÃO é possível trabalhar com a variavel fora do 'for'
+        // for(let i = 0; i<100; i++) {
+        //     console.log(i);
+        // }
+        // console.log(i);
+
+        var n1 = new Negociacao(new Date(), 10, 200.5);
+        var volume = n1.getVolume();
+
+        console.log(volume);
+
+    </script>
 </body>
 </html>
