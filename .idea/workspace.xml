@@ -10,7 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59e0860a-60b4-4eec-9af6-4f2851df51e0" name="Default Changelist" comment="" />
+    <list default="true" id="59e0860a-60b4-4eec-9af6-4f2851df51e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/js/app/controllers/NegociacaoController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +38,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/js/app/controllers" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -44,6 +53,7 @@
       <updated>1612643146092</updated>
       <workItem from="1612643148370" duration="2033000" />
       <workItem from="1612658328594" duration="220000" />
+      <workItem from="1613661261807" duration="1588000" />
     </task>
     <servers />
   </component>
@@ -60,5 +70,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="177" y="122" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613662515671">
+      <screen x="72" y="94" width="1294" height="741" />
+    </state>
+    <state x="177" y="122" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.94.1294.741/1366.0.1440.900@72.94.1294.741" timestamp="1613662515671" />
+    <state x="172" y="194" width="1094" height="541" key="DiffContextDialog" timestamp="1613661866523">
+      <screen x="72" y="94" width="1294" height="741" />
+    </state>
+    <state x="172" y="194" width="1094" height="541" key="DiffContextDialog/72.94.1294.741/1366.0.1440.900@72.94.1294.741" timestamp="1613661866523" />
   </component>
 </project>
