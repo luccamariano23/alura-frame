@@ -16,14 +16,23 @@ class NegociacaoController {
 
         event.preventDefault();
 
-        //Converte String para Date
-        let data = new Date(this._inputData.value.split('-'));
+        //'Map' captura cada indice de um array. No caso, cada indice do split;
+        let data = new Date(
+            ...this._inputData.value
+            .split('-')
+            .map(function (item, index) {
+                if(index === 1)
+                    return item - 1;
+                return item;
+            }));
+
 
         let negociacao = new Negociacao(
-            this._inputData.value,
+            data,
             this._inputQuantidade.value,
             this._inputValor.value,
         );
+        console.log(negociacao);
 
         //adicionar negociação na lista
 
