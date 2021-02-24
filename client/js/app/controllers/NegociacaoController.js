@@ -16,24 +16,18 @@ class NegociacaoController {
 
         event.preventDefault();
 
-        //'Map' captura cada indice de um array. No caso, cada indice do split;
-        let data = new Date(
-            ...this._inputData.value
-            .split('-')
-            .map(function (item, index) {
-                if(index === 1)
-                    return item - 1;
-                return item;
-            }));
-
+        let data = DateHelper.textoParaData(this._inputData.value);
 
         let negociacao = new Negociacao(
             data,
             this._inputQuantidade.value,
             this._inputValor.value,
         );
-        console.log(negociacao);
 
+        let diaMesAno = DateHelper.dataParaTexto(negociacao.getData());
+
+        console.log(diaMesAno);
+        console.log(negociacao);
         //adicionar negociação na lista
 
     }
