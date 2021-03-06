@@ -13,6 +13,9 @@ class NegociacaoController {
         this._negociacaoView = new NegociacaoView($('#negociacaoView'));
         //Renderizando tabela na view
         this._negociacaoView.update(this._listaNegociacoes);
+
+        this._mensagem = new Mensagem();
+        this._mensagemView = new MensagemView($('#mensagemView'));
     }
 
     adiciona(event) {
@@ -21,8 +24,14 @@ class NegociacaoController {
 
         //Cria lista de Negociações
         this._listaNegociacoes.adiciona(this._criaNegociacao());
+
         //Adicionando negociações na tabela
         this._negociacaoView.update(this._listaNegociacoes);
+
+        //Mensagem de sucesso na Inclusão
+        this._mensagem.setTexto('Sucesso na Importação da Negociação!');
+        this._mensagemView.update(this._mensagem);
+
         this._limpaFormulario();
     }
 
